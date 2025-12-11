@@ -1,0 +1,50 @@
+.gaming-list {
+  list-style: none;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.gaming-image {
+  width: 200px;
+  height: 250px;
+}
+.game-list {
+  margin: 10px;
+}
+.view-container {
+  display: flex;
+  gap: 8px;
+}
+.gaming-link {
+  text-decoration: none;
+}
+.game-title,
+.game-view-count {
+  font-size: 14px;
+  color: #7e858e;
+}
+.failure-image {
+  width: 250px;
+  height: 250px;
+}
+.failure-container {
+  height: 100%;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.failure-container p {
+  margin: 0;
+}
+.retry-btn {
+  width: 80px;
+  height: 30px;
+  border: none;
+  margin-top: 10px;
+  background-color: blue;
+  cursor: pointer;
+  border-radius: 7px;
+  color: white;
+}

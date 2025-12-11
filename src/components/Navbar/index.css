@@ -1,0 +1,158 @@
+.nav-container {
+  display: flex;
+  padding: 13px 20px;
+  align-items: center;
+  height: 5vh;
+  background-color: #e2e8f0;
+  justify-content: space-between;
+}
+.nav-dark-theme {
+  background-color: #313131;
+}
+.logo {
+  width: 100px;
+  height: 30px;
+}
+.theme-btn {
+  background: transparent;
+  border: none;
+  width: 30px;
+  cursor: pointer;
+  outline: none;
+  height: 30px;
+}
+.profile {
+  width: 40px;
+  height: 40px;
+}
+.options-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.logout-light-btn {
+  border: 1px solid #4f46e5;
+  padding: 5px 10px;
+  background: transparent;
+  width: 70px;
+  border-radius: 7px;
+  cursor: pointer;
+  color: #4f46e5;
+}
+.logout-dark-btn {
+  border: 1px solid white;
+  padding: 5px 10px;
+  width: 70px;
+  border-radius: 7px;
+  cursor: pointer;
+  background: transparent;
+  color: white;
+}
+.popup-content {
+  width: 320px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup-content-dark {
+  background-color: #313131;
+  color: white;
+}
+.conform-logout-btn-container {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+}
+.popup-button-cancel {
+  border: 1px solid #616e7c;
+  color: #828589;
+  background: transparent;
+  width: 70px;
+  padding: 10px;
+  border-radius: 7px;
+  cursor: pointer;
+  outline: none;
+  height: 40px;
+}
+.popup-button-confirm {
+  border: 1px solid #4f46e5;
+  background-color: #4f46e5;
+  color: white;
+  width: 70px;
+  padding: 10px;
+  border-radius: 7px;
+  cursor: pointer;
+  outline: none;
+  height: 40px;
+}
+.logout-btns {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Hide hamburger on large screens */
+.hamburger-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* MOBILE VIEW */
+@media screen and (max-width: 768px) {
+  .sidebar-container {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 240px;
+    height: 100vh;
+    background-color: #ffffff;
+    transition: 0.3s ease-in-out;
+    z-index: 999;
+    padding-top: 80px;
+  }
+
+  .sidebar-container.sidebar-open {
+    left: 0;
+  }
+
+  .profile {
+    display: none;
+  }
+
+  .logout-light-btn,
+  .logout-dark-btn {
+    display: none;
+  }
+
+  .hamburger-btn {
+    display: block;
+  }
+}
+/* Mobile Logout Icon */
+.mobile-logout-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: none; /* hidden by default */
+  margin-left: 12px;
+}
+
+/* SHOW ONLY ON MOBILE */
+@media screen and (max-width: 768px) {
+  .mobile-logout-btn {
+    display: inline-block;
+  }
+
+  /* Hide the big Logout button on mobile */
+  .logout-light-btn,
+  .logout-dark-btn {
+    display: none;
+  }
+
+  /* Hide profile image on mobile */
+  .profile {
+    display: none;
+  }
+}

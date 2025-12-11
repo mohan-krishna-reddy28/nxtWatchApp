@@ -1,0 +1,76 @@
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 91vh;
+  background-color: #e2e8f0;
+  min-width: 240px;
+}
+.tab-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: black;
+}
+.text-white {
+  color: white;
+}
+.text-dark {
+  color: black;
+}
+.tab-red {
+  color: red;
+}
+.active-text {
+  color: white;
+}
+
+.dark-sidebar {
+  background-color: #313131;
+  color: white;
+}
+.sidebar-top {
+  flex-grow: 1;
+}
+
+.contacts-container {
+  margin-top: auto;
+  padding: 15px;
+  max-width: 240px;
+}
+
+.tabs-container {
+  list-style: none;
+  padding: 0;
+}
+
+.tab-items-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  height: 40px;
+  max-width: 240px;
+  padding: 5px 15px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.social {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.active-tab {
+  background-color: #d7dfe9;
+  font-weight: bold;
+}
+.contacts-heading {
+  font-size: 14px;
+}
+.dark-sidebar .active-tab {
+  background-color: #424242;
+}
+.contact-text {
+  margin: 0;
+}
